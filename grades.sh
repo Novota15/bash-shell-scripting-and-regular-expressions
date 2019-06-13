@@ -24,12 +24,11 @@ echo "FileName: " $1
 
 
 # done < "$1"
-
+> average$1
 while read first second third fourth fifth sixth; do
 	let sum=($fourth+$fifth+$sixth)
 	let avg=($sum/3)
 	echo "average: $avg" 
-	echo " " > average$1
 	echo "$avg $first $third $second" >> average$1
 done < $1
 

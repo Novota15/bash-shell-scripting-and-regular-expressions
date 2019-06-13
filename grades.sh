@@ -32,4 +32,4 @@ while read first second third fourth fifth sixth; do
 	echo "$avg $first $third $second" >> average$1
 done < $1
 
-sort -k1 average$1
+sort -r -k1 average$1

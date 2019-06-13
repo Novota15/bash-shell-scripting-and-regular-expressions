@@ -5,9 +5,9 @@
 # execute chmod +x grades.sh first
 # scirpt withoug using the UNIX 'awk' command
 
-[[ -n "$1" ]] && echo "FOO=$1" || echo "Usage: grades.sh filename"
+[[ -n "$1" ]] && echo "FileName=$1" || echo "Usage: grades.sh filename"
 
-echo "FileName: " $1
+# echo "FileName: " $1
 
 # calculate averages and put them in a new file
 > average$1

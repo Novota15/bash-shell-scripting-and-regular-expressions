@@ -9,6 +9,7 @@
 
 echo "FileName: " $1
 
+# calculate averages and put them in a new file
 > average$1
 while read first second third fourth fifth sixth; do
 	let sum=($fourth+$fifth+$sixth)

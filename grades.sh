@@ -29,6 +29,6 @@ while read first second third fourth fifth sixth; do
 	let sum=($fourth+$fifth+$sixth)
 	let avg=($sum/3)
 	echo "average: $avg" 
-	echo " " > sorted'$1'.txt
-	echo "$avg $first $third $second" >> sorted'$1'.txt
+	echo " " > sorted$1.txt
+	echo "$avg $first $third $second" >> sorted$1.txt
 done < $1

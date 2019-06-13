@@ -26,9 +26,5 @@ echo "FileName: " $1
 # done < "$1"
 
 while read first second third fourth fifth sixth; do
-	sum = 0;
-	avg = 0;
-	sum = fourth + fifth + sixth
-	avg = sum/3
-	echo "average: $sum" 
+	echo "average: $first $second $third $fourth $fifth $sixth" 
 done < $1

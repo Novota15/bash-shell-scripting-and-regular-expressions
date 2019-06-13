@@ -12,15 +12,16 @@ echo "FileName: " $1
 # while IFS= read -r line; do
 # 	echo "Text read from file: $line"
 # 	# read each bit of info in the line and store in array
-# 	cut -d " " -f4-6 $line 
-# 	array=()
-# 	for element in $line
-# 	do
-# 		echo "$element"
-# 		array+=("$element")
-# 		echo ${#array[@]}
+# 	# cut -d " " -f4-6 $line 
+# 	# array=()
+# 	# for element in $line
+# 	# do
+# 	# 	echo "$element"
+# 	# 	array+=("$element")
+# 	# 	echo ${#array[@]}
 
-# 	done
+# 	# done
+
 
 # done < "$1"
 
@@ -28,3 +29,4 @@ while read fourth fifth sixth; do
 	sum = fourth + fifth + sixth
 	avg = sum/3
 	echo "average: $sum" 
+done < $1

@@ -8,7 +8,7 @@
 [[ -n "$1" ]] && echo "FileName=$1" || echo "Usage: regexAnswers.sh filename"
 
 # count lines ending with number or alphabetic letter
-grep -o '$[A-Za-z|0-9]' $1 | wc -l
+grep -o '$[A-Za-z|0-9].' $1 | wc -l
 # number of lines that do not start with a vowel
 grep -o '^[AEIOUaeiou]' $1 | wc -l
 # number of lines that have 12 or more alphabetic letters

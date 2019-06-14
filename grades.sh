@@ -3,7 +3,7 @@
 # Grant Novota 
 
 # execute chmod +x grades.sh first
-# scirpt withoug using the UNIX 'awk' command
+# script withoug using the UNIX 'awk' command
 
 [[ -n "$1" ]] && echo "FileName=$1" || echo "Usage: grades.sh filename"
 

@@ -1,3 +1,4 @@
 #!/bin/bash
 
-# scirpt using the UNIX 'awk' command
+# script using the UNIX 'awk' command
+

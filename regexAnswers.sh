@@ -10,7 +10,7 @@
 # count lines ending with number or alphabetic letter
 grep -o '[A-Za-z|0-9]*$' $1 | wc -l
 # number of lines that do not start with a vowel
-grep -o '[^AEIOU]*^' $1 | wc -l
+grep -o '[^AEIOUaeiou]*^' $1 | wc -l
 # number of lines that have 12 or more alphabetic letters
 grep -o '[A-Z\{12,\}]' $1 | wc -l
 # number of lines containing only numbers

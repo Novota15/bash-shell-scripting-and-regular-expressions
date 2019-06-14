@@ -18,7 +18,7 @@ grep '[0-9]' $1 | wc -l
 # number of email addresses from UCDenver (e.g. end with 'UCDenver.edu')
 grep -i 'UCDenver.edu' $1 | wc -l #confirmed
 # number of phone numbers in the file (i.e. format ___-___-____)
-grep '\[[:digit:]]{3}-[[:digit:]]{3}-[[:digit:]]{4}\b' $1 | wc -l
+grep '\b[[:digit:]]{3}-[[:digit:]]{3}-[[:digit:]]{4}\b' $1 | wc -l
 # number of city of Boulder phone numbers (303 numbers)
 
 # number of lines begining with a vowel and ending with a number

@@ -24,4 +24,4 @@ grep -E '\b303-[[:digit:]]{3}-[[:digit:]]{4}\b' $1 | wc -l
 # number of lines begining with a vowel and ending with a number
 grep '^[AEIOUaeiou]*[0-9]\+$' $1 | wc -l
 # number of email addresses in "first.last" name format & involve someone whose first name starts with a letter in the second half of the alphabet
-grep -E '\b[A-Ma-m].[O-Zo-z]\b' $1 | wc -l
+grep -E '\b[A-Ma-m].[O-Zo-z]@\b' $1 | wc -l

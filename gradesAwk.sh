@@ -8,4 +8,4 @@
 # 1. awk 'FNR > 1 { sum=0; for (col=3; col<=NF; col++) sum += $col; print $1 " " $2 " " sum/6; }' grades.txt
 # 2. awk 'FNR > 1 {avg; for (col=6; col<=NF; col++) avg += $col/3;} END {print "Average = ", avg/6}' grades.txt, this gives 80.39
 
-awk '{avg; for (col=4; col<=NF; col++) avg += $col/3; print avg, col=1, col=3, col=2 }' $1
+awk '{avg=0; for (col=4; col<=NF; col++) avg += $col/3; print avg, $col=1, $col=3, $col=2 }' $1
